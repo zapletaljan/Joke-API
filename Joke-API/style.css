@@ -1,0 +1,91 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    background-image: linear-gradient(to bottom, rgb(75, 75, 75), rgb(49, 49, 49));
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding-bottom: 30px;
+}
+
+.container button {
+    max-width: 150px;
+}
+
+.container h1 {
+    margin: 40px 0 20px 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}
+
+.joke-container {
+    margin: 40px;
+    max-width: 80%;
+    min-width: 80%;
+    padding: 20px;
+    background-color: #2f2d3a;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #667eea, #764ba2) 1;
+    margin: auto 0;
+}
+
+.joke-container p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.joke-container-buttons {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.joke-container-buttons button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #3584c4;
+    cursor: pointer;
+    transition: border-color 150ms ease-in-out, background-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.joke-container-buttons button:hover {
+    border: 2px solid white;
+}
+
+.joke-container-buttons button:active {
+    background-color: #556edb;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}

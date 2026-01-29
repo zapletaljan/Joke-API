@@ -1,9 +1,13 @@
 const jokeElement = document.getElementById("joke");
 const newJokeButton = document.getElementById("new-joke");
+const copyJokeButton = document.getElementById("copy-joke");
 
 document.addEventListener("DOMContentLoaded", function () {
     newJokeButton.addEventListener("click", function () {
         fetchJoke();
+    });
+    copyJokeButton.addEventListener("click", function () {
+        navigator.clipboard.writeText(jokeElement.textContent);
     });
 });
 
